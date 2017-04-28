@@ -1,0 +1,64 @@
+<html>
+
+<head>
+    <!-- Bootstrap styles -->
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/cyborg/bootstrap.min.css" />
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Custom styles -->
+    <link rel="stylesheet" href="main.css" />
+
+    <!-- Include jQuery -->
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+
+    <!-- Custom scripts -->
+    <script src="player.js"></script>
+    <script src="main.js"></script>
+
+</head>
+
+<body>
+    <div class="container">
+
+        <h1 class="page-header">
+        JukeBox
+
+        <!-- Play button -->
+        <button id="play-button" class="btn btn-lg btn-primary">Play All</button>
+      </h1>
+
+        <!-- Song queue -->
+        <ul id="song-queue">
+        </ul>
+
+        <!-- Song message -->
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-8">
+            <p id="message" style="color:white; font-size: 25px;">Enter a Song To Play</p>
+          </div>
+        </div>
+      </div>
+
+        <!-- Song form -->
+        <form id='song-form'>
+          <div class="row">
+            <div class="col-sm-8">
+              <input type="text" name="song-name" class="form-control" placeholder="Song Name">
+            </div>
+          </div>
+          <br>
+          <div class="row">
+            <div class="col-sm-8">
+              <input name="notes" class="form-control" type="text" placeholder="Enter song notes..." />
+            </div>
+          </div>
+          <br>
+          <input class="btn btn-default" type="submit" value="Add Song">
+
+        </form>
+
+    </div>
+</body>
+
+</html>
